@@ -21,6 +21,7 @@
                                 <option value="{{$developer->id}}">{{$developer->id}} {{$developer->name}}</option>
                             @endforeach
                         </select>
+                        <a class="btn btn-info" style="margin-top: 5px " href="{{action('TaskController@edit',['task' => $task->id])}}"> Edit Task </a>
                     </li>
                     <hr>
                 @endforeach
@@ -34,41 +35,6 @@
             <br/>
 
             <a class="btn btn-primary" href="{{action('TaskController@create')}}"> Create New Task </a>
-{{--            <div class="col-md-8 col-md-offset-2">--}}
-{{--                <form action="{{ url('task') }}" method="POST" class="form-horizontal">--}}
-{{--                {{ csrf_field() }}--}}
-{{--                <!-- Task Name -->--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label for="task-name" class="col-sm-3 control-label">Title</label>--}}
-
-{{--                        <div class="col-sm-6">--}}
-{{--                            <input type="text" name="title" id="task-name" class="form-control">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label for="task-name" class="col-sm-3 control-label">Description</label>--}}
-
-{{--                        <div class="col-sm-6">--}}
-{{--                            <input type="text" name="description" id="task-description" class="form-control">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-{{--                --}}{{--<select class="form-control" name="developer">--}}
-{{--                --}}{{--@foreach($developers as $developer)--}}
-{{--                --}}{{--<option value="{{$developer->id}}">{{$developer->name}}</option>--}}
-{{--                --}}{{--@endforeach--}}
-{{--                --}}{{--</select>--}}
-
-{{--                <!-- Add Task Button -->--}}
-{{--                    <div class="form-group">--}}
-{{--                        <div class="col-sm-offset-3 col-sm-6">--}}
-{{--                            <button type="submit" class="btn btn-default">--}}
-{{--                                <i class="fa fa-plus"></i> Add Task--}}
-{{--                            </button>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </form>--}}
-{{--            </div>--}}
         </div>
     </div>
 

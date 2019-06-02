@@ -17,18 +17,11 @@
                         </div>
                     </div>
 
-                    <select class="form-control" name="developer">
-                        {{--                    @foreach($developers as $developer)--}}
-                        {{--                        <option  value="{{$developer->id}}">{{$developer->name}}</option>--}}
-                        {{--                    @endforeach--}}
-                    </select>
-
-
                     <!-- Add Task Button -->
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-6">
                             <button type="submit" class="btn btn-default">
-                                <i class="fa fa-plus"></i> Add Task
+                                <i class="fa fa-plus"></i> Update Task
                             </button>
                         </div>
                     </div>
